@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "eggmeon:fried_egg",
+  "ingredient": "minecraft:egg",
+  "result": {
+    "id": "eggmeon:fried_egg"
+  }
+}

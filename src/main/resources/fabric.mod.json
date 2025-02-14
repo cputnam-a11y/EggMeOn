@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "eggmeon",
+	"version": "${version}",
+	"name": "EggMeOn",
+	"description": "More Eggs!",
+	"authors": [
+		"cputnam-a11y"
+	],
+	"contact": {
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/eggmeon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"eggmeon.EggMeOn"
+		],
+		"fabric-datagen": [
+          "eggmeon.datagen.EggMeOnDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
