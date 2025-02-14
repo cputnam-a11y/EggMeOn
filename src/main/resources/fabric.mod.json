@@ -5,10 +5,11 @@
 	"name": "EggMeOn",
 	"description": "More Eggs!",
 	"authors": [
-		"cputnam-a11y"
+		"cputnam-a11y",
+		"Startraveler"
 	],
 	"contact": {
-		"sources": ""
+		"sources": "https://github.com/cputnam-a11y/EggMeOn"
 	},
 	"license": "MIT",
 	"icon": "assets/eggmeon/icon.png",
