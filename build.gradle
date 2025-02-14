@@ -1,6 +1,8 @@
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
-	id 'maven-publish'
+	//noinspection GroovyAssignabilityCheck
+    id 'fabric-loom' version '1.9-SNAPSHOT'
+    //noinspection GroovyAssignabilityCheck
+    id 'maven-publish'
 }
 
 version = project.mod_version
@@ -43,13 +45,17 @@ dependencies {
 }
 
 processResources {
-	inputs.property "version", project.version
+	//noinspection GroovyAssignabilityCheck
+    inputs.property "version", project.version
 
-	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+    //noinspection GroovyAssignabilityCheck
+    filesMatching("fabric.mod.json") {
+		//noinspection GroovyAssignabilityCheck
+        expand "version": project.version
 	}
 }
 
+//noinspection GroovyAssignabilityCheck
 tasks.withType(JavaCompile).configureEach {
 	it.options.release = 21
 }
@@ -69,7 +75,8 @@ jar {
 
 publishing {
 	publications {
-		create("mavenJava", MavenPublication) {
+		//noinspection GroovyAssignabilityCheck
+        create("mavenJava", MavenPublication) {
 			artifactId = project.archives_base_name
 			from components.java
 		}
