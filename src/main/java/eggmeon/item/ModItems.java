@@ -1,7 +1,5 @@
 package eggmeon.item;
 
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.ConsumableComponent;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -23,9 +21,6 @@ public class ModItems {
                             .nutrition(5)
                             .saturationModifier(0.4f)
                             .build()
-            ).component(
-                    DataComponentTypes.CONSUMABLE,
-                    ConsumableComponent.builder().build()
             )
     );
     public static final Item BOILED_EGG = register(
@@ -36,9 +31,6 @@ public class ModItems {
                             .nutrition(6)
                             .saturationModifier(0.3f)
                             .build()
-            ).component(
-                    DataComponentTypes.CONSUMABLE,
-                    ConsumableComponent.builder().build()
             )
     );
 
@@ -52,7 +44,7 @@ public class ModItems {
                 Registries.ITEM,
                 key,
                 itemSupplier.apply(
-                        settingsSupplier.get().registryKey(key)
+                        settingsSupplier.get()
                 )
         );
     }

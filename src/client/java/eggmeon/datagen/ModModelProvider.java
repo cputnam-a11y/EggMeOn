@@ -1,13 +1,12 @@
 package eggmeon.datagen;
 
 import eggmeon.item.ModItems;
-import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.Models;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 
-public class ModModelProvider extends FabricModelProvider {
+public class ModModelProvider extends net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider {
 
     public ModModelProvider(FabricDataOutput output) {
         super(output);
